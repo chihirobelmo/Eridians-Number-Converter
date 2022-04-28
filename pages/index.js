@@ -17,7 +17,7 @@ export default function Home() {
   let eridian_numbers = ""
 
   const [dec, setDec] = React.useState(0)
-  const [eri, setEri] = React.useState(0)
+  const [eri, setEri] = React.useState("ℓ")
 
   const handleSubmit = (event) => {
     event.preventDefault()
@@ -43,7 +43,6 @@ export default function Home() {
             id="decimals"
             name="decimals"
           />
-          <button type="submit">Submit</button>
         </form>
 
         <h1 className={styles.title}>
