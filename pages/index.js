@@ -1,8 +1,31 @@
 import Head from 'next/head'
 import Image from 'next/image'
+import React from 'react';
 import styles from '../styles/Home.module.css'
 
 export default function Home() {
+
+  // let formvalue = "";
+
+  // let decimals = 114514;
+  let hexagon = 6;
+
+  // let decimals_to_string = decimals.toString();
+  // let decimals_to_hexagon = decimals.toString(hexagon);
+  // let hexagon_to_eridians = decimals_to_hexagon.replaceAll("0","ℓ").replaceAll("1","I").replaceAll("2","V").replaceAll("3","λ").replaceAll("4","＋").replaceAll("5","∀");
+
+  let eridian_numbers = ""
+
+  const [dec, setDec] = React.useState(0)
+  const [eri, setEri] = React.useState(0)
+
+  const handleSubmit = (event) => {
+    event.preventDefault()
+
+    setDec(event.target.value);
+    setEri(event.target.value.toString(hexagon).replaceAll("0","ℓ").replaceAll("1","I").replaceAll("2","V").replaceAll("3","λ").replaceAll("4","＋").replaceAll("5","∀"));
+  }
+
   return (
     <div className={styles.container}>
       <Head>
@@ -12,8 +35,19 @@ export default function Home() {
       </Head>
 
       <main className={styles.main}>
+
+        <form onChange={handleSubmit}>
+          <label>Decimals: </label>
+          <input
+            type="number"
+            id="decimals"
+            name="decimals"
+          />
+          <button type="submit">Submit</button>
+        </form>
+
         <h1 className={styles.title}>
-          Welcome to <a href="https://nextjs.org">Next.js!</a>
+          {dec} = {eri}
         </h1>
 
         <p className={styles.description}>
