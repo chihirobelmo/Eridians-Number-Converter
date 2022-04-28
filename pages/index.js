@@ -17,13 +17,15 @@ export default function Home() {
   let eridian_numbers = ""
 
   const [dec, setDec] = React.useState(0)
+  const [hex, setHex] = React.useState(0)
   const [eri, setEri] = React.useState("ℓ")
 
   const handleSubmit = (event) => {
     event.preventDefault()
 
-    setDec(event.target.value);
-    setEri(event.target.value.toString(hexagon).replaceAll("0","ℓ").replaceAll("1","I").replaceAll("2","V").replaceAll("3","λ").replaceAll("4","＋").replaceAll("5","∀"));
+    setDec(Number(event.target.value));
+    setHex(Number(event.target.value).toString(hexagon));
+    setEri(Number(event.target.value).toString(hexagon).replaceAll("0","ℓ").replaceAll("1","I").replaceAll("2","V").replaceAll("3","λ").replaceAll("4","＋").replaceAll("5","∀"));
   }
 
   return (
@@ -46,7 +48,7 @@ export default function Home() {
         </form>
 
         <h1 className={styles.title}>
-          {dec} = {eri}
+          Decimal: {dec} = Hexagon: {hex} = Eridian: {eri}
         </h1>
 
         <p className={styles.description}>
