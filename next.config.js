@@ -8,7 +8,7 @@ module.exports = {
     return [
       {
         key: 'Content-Security-Policy',
-        value: 'frame-src; https://www.amazon.com'
+        value: "frame-ancestors 'self' https://www.amazon.com/"
       },
     ]
   },

@@ -38,20 +38,29 @@ export default function Home() {
 
       <main className={styles.main}>
 
-        <form onChange={handleSubmit}>
-          <label>Decimals: </label>
-          <input
-            type="number"
-            id="decimals"
-            name="decimals"
-          />
-        </form>
-
-        <h1 className={styles.title}>
-          Decimal: {dec} = Hexagon: {hex} = Eridian: {eri}
+        <h1 className={styles.eridian}>
+          <form onChange={handleSubmit} >
+            <label>Decimals: </label>
+            <input
+              type="number"
+              id="decimals"
+              name="decimals"
+              className={styles.form}
+            />
+          </form>
+          <p>= Hexagon: {hex}</p><p>= Eridian: {eri}</p>
         </h1>
 
-        <iframe type="text/html" sandbox="allow-scripts allow-same-origin allow-popups" width="336" height="550" src="https://read.amazon.co.jp/kp/card?asin=B08FHBV4ZX&preview=inline&linkCode=kpe&ref_=cm_sw_r_kb_dp_2BFE3WC2JM8NZHT0ZK3R" ></iframe>
+        <h1 >
+          <a className={styles.book}
+            href="https://www.amazon.com/Project-Hail-Mary-Andy-Weir/dp/0593135202"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+          Project Hail Mary
+        : by Andy Weir
+          </a>
+        </h1>
       </main>
 
       <footer className={styles.footer}>

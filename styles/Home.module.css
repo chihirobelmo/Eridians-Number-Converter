@@ -45,6 +45,29 @@
   font-size: 4rem;
 }
 
+.form {
+  margin: 0;
+  line-height: 1.0;
+  font-size: 3rem;
+  width: 8rem;
+  text-align: right;
+}
+
+.eridian {
+  margin: 0;
+  line-height: 1.0;
+  font-size: 3rem;
+  text-align: center;
+}
+
+.book {
+  margin: 0;
+  line-height: 1.0;
+  font-size: 2rem;
+  text-align: center;
+  color: #0070f3;
+}
+
 .title,
 .description {
   text-align: center;
