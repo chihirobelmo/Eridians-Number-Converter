@@ -48,7 +48,7 @@ export default function Home() {
               className={styles.form}
             />
           </form>
-          <p>= Hexagon: {hex}</p><p>= Eridian: {eri}</p>
+          <p>= Senary: {hex}</p><p>= Eridian: {eri}</p>
         </h1>
 
         <h1 >
