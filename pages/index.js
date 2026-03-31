@@ -5,8 +5,7 @@ import styles from '../styles/Home.module.css'
 
 export default function Home() {
 
-  let hexagon = 6;
-  let eridian_numbers = ""
+  const hexagon = 6;
 
   const [dec, setDec] = React.useState(0)
   const [hex, setHex] = React.useState(0)
