@@ -37,9 +37,9 @@ export default function Home() {
             name="decimals"
           />
         </form>
-
+ 
         <h1 className={styles.title}>
-          Decimal: {dec} = Hexagon: {hex} = Eridian: {eri}
+          Decimal: {dec} <br/> Hexagon: {hex} <br/> Eridian: {eri}
         </h1>
       </main>
 
