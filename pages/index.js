@@ -5,15 +5,7 @@ import styles from '../styles/Home.module.css'
 
 export default function Home() {
 
-  // let formvalue = "";
-
-  // let decimals = 114514;
   let hexagon = 6;
-
-  // let decimals_to_string = decimals.toString();
-  // let decimals_to_hexagon = decimals.toString(hexagon);
-  // let hexagon_to_eridians = decimals_to_hexagon.replaceAll("0","ℓ").replaceAll("1","I").replaceAll("2","V").replaceAll("3","λ").replaceAll("4","＋").replaceAll("5","∀");
-
   let eridian_numbers = ""
 
   const [dec, setDec] = React.useState(0)
