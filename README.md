@@ -2,6 +2,13 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 
 ## Getting Started
 
+install node.js, install npm and allow scripts
+
+```bash
+npm install
+Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass
+```
+
 First, run the development server:
 
 ```bash
